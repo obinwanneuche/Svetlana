@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav{
+  background-color: white;
+}
+
+h1{
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+header,.speaking-club,.courses{
+  display: block;
+  background-color: #F0F5F9;
+  padding: 8em 10% 5em 10%;
+  line-height: 2em;
+  text-align: left;
+}
+
+.courses{
+  background-color: white;
+  padding-top: 2em;
+}
+
+.speaking-club{
+  padding-top: 2em;
+}

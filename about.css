@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style:none;
+}
+
+nav{
+  background-color: white;
+}
+
+header h1{
+  padding-bottom: 0.8em;
+  text-align: left;
+}
+
+.image-about{
+  float: right;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 0 2.5em 3em;
+
+}
+
+header{
+  display: block;
+  background-color: #F0F5F9;
+  padding: 8em 10% 5em 10%;
+  line-height: 2em;
+  text-align: left;
+}
+
+.section-contact-us-form{
+  padding-top: 4em;
+  /* width: 100%; */
+/* doing this will help the form to stay in the center */
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us-form{
+  /* width: 100%; */
+  max-width: 600px;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-us-form h3{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-us-form p{
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.contact-us-form input{
+  border: 0;
+  border-bottom: 2px solid black;
+}
+
+.contact-us-form textarea{
+  border: 2px solid black;
+  margin-bottom: 2em;
+}
+
+button{
+  border: 0;
+  font-size: 18px;
+  padding: 8px 25px;
+  background: #3B8849;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  margin-top: 20px;
+  text-align: center;
+  align-self: center;
+}
+
+button:hover{
+  background: #4BB25D;
+  transition: .1s;
+  color: white;
+  text-decoration: none;
+}
+
+
+@media (max-width: 615px){
+  .image-about{
+    max-width: 440px;
+    padding-left: 0;
+  }
+
+  header h1{
+    text-align: center;
+  }
+
+  .contact-us-form{
+    max-width: 350px;
+  }

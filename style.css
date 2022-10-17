@@ -1,0 +1,563 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style:none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+span{
+  color:#43B658;
+  font-weight: bold;
+}
+
+h1{
+  font-size: 2em;
+  line-height: 1.3em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h4{
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fa-bars{
+  display: none;
+}
+
+.fa-xmark{
+  display: none;
+}
+
+.icon-logo{
+  width: 205px;
+  height: 58px;
+  align-self: center;
+  margin-left: 5em;
+  margin-top: 1.3em;
+}
+
+.icon-logo-slide{
+  display: none;
+}
+
+nav{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul li{
+  margin: 0 20px;
+  padding-top: 10px;
+}
+
+nav ul li a{
+  color: black;
+  font-size: 18px;
+  /* font-weight: bold; */
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover{
+  background: #3B8849;
+  transition: .1s;
+  color: white;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+
+}
+/* left side */
+.landing-left{
+  background-color: #F0F5F9;
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  /* works only if the display: flex */
+}
+
+.icon-logo-landing{
+  width: 100%;
+  text-align: center;
+  max-width: 500px;
+}
+
+.slogan{
+  font-size: 2em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+header div a{
+  font-size: 18px;
+  padding: 8px 25px;
+  background: #3B8849;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+header div a:hover{
+  background: #4BB25D;
+  transition: .1s;
+  color: white;
+  text-decoration: none;
+}
+
+/* right side */
+
+.landing-right{
+  display: flex;
+  flex: 50%;
+}
+.landing-image{
+  width: 100%;
+  /* makes images responsive */
+  max-width: 1000px;
+}
+
+
+/* SECTION Reasons to start speaking russian */
+.section-reasons{
+  padding: 3em 10% 3em 10%;
+  line-height: 2em;
+  text-align: left;
+}
+
+/* SECTION About Us */
+
+.section-about-us{
+  background-color: #F0F5F9;
+  padding: 3em 10% 5em 10%;
+  line-height: 2em;
+  text-align: left;
+}
+
+.header-about-us{
+  text-align: left;
+}
+
+.image-about-us{
+  width: 100%;
+  max-width: 300px;
+  float: left;
+  margin-right: 5%;
+}
+
+
+/* SECTION What we do */
+.header-what-we-do{
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.section-what-we-do{
+  line-height: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.containers-what-we-do{
+    padding: 2em 2.5em;
+    position: relative;
+}
+
+.courses-image{
+  max-width: 300px;
+  height: auto;
+}
+
+.webinars-image{
+  max-width: 300px;
+}
+
+.speaking-club-image{
+  max-width: 300px;
+}
+
+.btn-courses,.btn-webinars,.btn-speaking-club{
+  position: absolute;
+  font-size: 18px;
+  padding: 3% 10%;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 77.4%;
+  left: 50%;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-courses{
+  background: #2354D4;
+}
+
+.btn-courses:hover{
+  background: #3768E9;
+  transition: .1s;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-webinars{
+  background: #3B8849;
+}
+
+.btn-webinars:hover{
+  background: #4BB25D;
+  transition: .1s;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-speaking-club{
+  background: #6828BC;
+}
+
+.btn-speaking-club:hover{
+  background: #8840E6;
+  transition: .1s;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* SECTION OUR STUDENTS */
+
+.header-our-students{
+  padding-top: 3em;
+  text-align: center;
+}
+
+.section-our-students{
+  position: relative;
+  padding-top: 2em;
+}
+
+.fa-chevron-left,.fa-chevron-right{
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 100;
+  margin: 0 1em;
+}
+
+.carousel-indicators [data-target]{
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  margin: 5px;
+  top: 75px;
+  background-color: gray;
+}
+
+.carousel-indicators li.active{
+  background-color: black;
+}
+
+
+/* SECTION REVIEWS */
+
+.section-reviews{
+  padding-bottom: 4em;
+}
+
+.header-reviews{
+  background-color: #F0F5F9;
+  padding-bottom: 1em;
+  margin-top: 6.5em;
+  text-align: center;
+  padding-top: 2.1em;
+}
+
+.fa-circle-arrow-left,.fa-circle-arrow-right{
+  color: black;
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 100;
+  margin: 0 1em;
+}
+
+.indicators-reviews [data-target]{
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  margin: 5px;
+  top: 73px;
+  background-color: gray;
+}
+
+.indicators-reviews li.active{
+  background-color: black;
+}
+
+.section-reviews2{
+  display: none;
+}
+
+.carousel-caption p, .d-flex span{
+  color: black;
+}
+
+.carousel-item{
+  background-color:#F0F5F9;
+}
+
+.d-flex{
+  padding: 3em 3% 5em 12%;
+}
+
+.d-flex p{
+  line-height: 2em;
+}
+
+
+/* SECTION Why choose us */
+.header-why-choose-us{
+  padding-top: 2em;
+}
+
+.section-why-choose-us{
+  padding: 1em 10% 5em 10%;
+  line-height: 2em;
+  text-align: left;
+}
+
+
+/* SECTION Countries with which we cooperate */
+.header-countries-with-which-we-cooperate{
+  padding-bottom: 2em;
+}
+
+.section-countries-with-which-we-cooperate{
+  background-color: #F0F5F9;
+  padding: 3em 10% 5em 10%;
+  line-height: 2em;
+  text-align: center;
+}
+
+.table{
+  overflow-x: auto;
+}
+
+.section-countries-with-which-we-cooperate p{
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+.icon-logo-footer{
+  padding: 4em 0 1em 0;
+}
+footer{
+  padding-left: 10%;
+  padding-bottom: 5em;
+}
+
+@media (max-width: 1050px){
+  .section-what-we-do{
+    overflow: hidden;
+}
+
+.containers-what-we-do{
+    padding: 2em 1em;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.courses-image{
+  min-width: 220px;
+  width: 100%;
+}
+
+.webinars-image{
+  min-width: 220px;
+  width: 100%;
+}
+
+.speaking-club-image{
+  min-width: 220px;
+  width: 100%;
+}
+
+.btn-courses,.btn-webinars,.btn-speaking-club{
+  font-size: 16px;
+  padding: 3% 15%;
+}
+}
+
+@media (max-width: 975px){
+  .icon-logo{
+    margin: 0;
+    position:absolute;
+    top: 20px;
+    left: 10%;
+  }
+
+  nav{
+    padding: 0;
+  }
+
+  nav ul{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #F0F5F9;
+    transition: all .5s;
+    justify-content: flex-start;
+    position: fixed;
+    transition: all .5s ease;
+    left: 100%;
+    padding-top: 90px;
+    z-index: 1;
+  }
+
+  nav ul li{
+    padding-top: 20px;
+    margin: 30px auto;
+  }
+
+  .fa-bars{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    top: 30px;
+  }
+
+  .fa-xmark{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    top: 30px;
+  }
+
+  .icon-logo-slide{
+    display: block;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  /* header */
+  header{
+    flex-direction: column;
+  }
+
+  .landing-left{
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    padding-bottom: 20%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 28%;
+  }
+
+  .icon-logo-landing{
+    max-width: 450px;
+    display: none;
+  }
+
+  .slogan{
+    font-size: 2em;
+    color: white;
+    margin: 5% 5% 0 0;
+  }
+
+  .landing-right{
+    display: flex;
+    flex: 100%;
+  }
+
+  .landing-image{
+    max-width: 100%;
+
+
+}
+
+  nav ul.show{
+  left: 0;
+}
+
+.btn-courses,.btn-webinars,.btn-speaking-club{
+  padding: 3.2% 14%;
+}
+
+.section-reviews2{
+  display: block;
+}
+
+.section-reviews{
+  display: none;
+}
+
+.header-why-choose-us{
+  margin-top: 3em;
+}
+
+}
+
+@media (max-width: 760px){
+  .section-what-we-do{
+    flex-direction: column;
+  }
+
+  .containers-what-we-do{
+    width: 100%;
+    text-align: center;
+    /* fixed my ccentering problems */
+  }
+
+  .btn-courses,.btn-webinars,.btn-speaking-club{
+    position: absolute;
+    font-size: 18px;
+    padding: 0.6em 2.1em;
+  }
+
+  .d-block{
+    min-width: 400px;
+  }
+
+
+}
